@@ -3,7 +3,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import "./crudComponents/Components.css";
 import LandingPage from "./crudComponents/LandingPage";
-import HomePage from "./crudComponents/HomePage";
+
 import AddUser from "./crudComponents/AddUser";
 import UserLists from "./crudComponents/UserLists";
 import Register from "./crudComponents/Register";
@@ -40,8 +40,6 @@ function App() {
   };
   const Adduser = (user) => {
     setUserList([...userList, user]);
-
-    alert("user added");
   };
   const DeleteUser = (id) => {
     const UserList = [...userList];
